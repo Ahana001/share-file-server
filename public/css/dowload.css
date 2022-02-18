@@ -1,0 +1,60 @@
+:root{
+    --bg-color: #E8E8F6;
+    --container-width:500px;
+    --border-color-light: #B4AFF6;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100vw;
+    font-family: system-ui;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.download{
+    text-align: center;
+}
+.download h4{
+    font-size: 30px;
+}
+.download .download__icon{
+    height: 100px;
+    animation: move 1s infinite;
+}
+@keyframes move{
+    0%{
+        transform: translateY(0px) scale(1);
+    }
+    50%{
+        transform: translateY(20px) scale(0.9);
+    }
+    100%{
+        transform: translateY(0px) scale(1);
+    }
+}
+.download .send-btn-container{
+    background-color: var(--border-color-light);
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: fit-content;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.download .send-btn-container:hover{
+    color: purple;
+    background-color: grey;
+}
+.download .send-btn-container a{
+    text-decoration: none;
+}
+.download .send-btn-container a:active{
+    color: #fff;
+}
